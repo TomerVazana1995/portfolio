@@ -1,4 +1,4 @@
-import Me from "../../images/me.png";
+import Me from "../../assets/me.png";
 import Button from "../../shared/Button/Button";
 import { motion } from "framer-motion";
 import { SelectedPage } from "../../shared/types";
@@ -10,7 +10,7 @@ type Props = {
 const Hero = ({setSelectedPage}: Props) => {
   return (
     <section id="home">
-      <div className="content">
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="content">
         <motion.div
           className="left-col"
           initial="hidden"
@@ -40,7 +40,7 @@ const Hero = ({setSelectedPage}: Props) => {
         <div className="right-col">
           <img src={Me} alt="#" />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

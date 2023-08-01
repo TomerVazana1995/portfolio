@@ -19,7 +19,7 @@ body {
 
 #root {
   min-height: 100dvh;
-  background-image: url("./images/background3.jpg");
+  background-image: url("./assets/background3.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -230,6 +230,7 @@ body {
 
 .aboutMe-content h3 {
   padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .aboutMe-content p {
@@ -237,7 +238,7 @@ body {
 }
 
 .stack-icons img{
-  padding: 0.3rem;
+  padding: 0.4rem;
 }
 
 /* ----------- PROJECTS ------------- */
@@ -275,6 +276,7 @@ body {
   border: 3px solid rgba(164,161,155,0.36);
   text-align: center;
   padding-bottom: 2rem;
+  background: #f2f2f2;
 }
 
 .project-image {

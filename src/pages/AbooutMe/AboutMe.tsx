@@ -1,17 +1,17 @@
 import { SelectedPage } from "../../shared/types";
 import { motion } from "framer-motion";
-import c_sharp from "../../images/icons/c#.png"
-import c_plus from "../../images/icons/c++.png";
-import html from "../../images/icons/html.png";
-import javascript from "../../images/icons/javascript.png";
-import typescript from "../../images/icons/typescript.png";
-import git from "../../images/icons/git.png";
-import nodejs from "../../images/icons/nodejs.png";
-import sql from "../../images/icons/sql.png";
-import tailwind from "../../images/icons/tailwind-css.png";
-import react from "../../images/icons/react.png";
-import python from "../../images/icons/python.png";
-import css from "../../images/icons/css3.png";
+import c_sharp from "../../assets/icons/c_sharp.png"
+import c_plus from "../../assets/icons/c_plus.png";
+import html from "../../assets/icons/html.png";
+import javascript from "../../assets/icons/javascript.png";
+import typescript from "../../assets/icons/typescript.png";
+import git from "../../assets/icons/git.png";
+import nodejs from "../../assets/icons/nodejs.png";
+import sql from "../../assets/icons/sql.png";
+import tailwind from "../../assets/icons/tailwind-css.png";
+import react from "../../assets/icons/react.png";
+import python from "../../assets/icons/python.png";
+import css from "../../assets/icons/css3.png";
 
 const icons: Array<string> = [react, html, css, tailwind, nodejs, sql, javascript, typescript, python, c_sharp, c_plus, git]
 

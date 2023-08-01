@@ -34,8 +34,8 @@ function App() {
         isTopOfPage={isTopOfPage}
       />
       <SideButtons />
-      <Hero setSelectedPage={setSelectedPage}/>
-      <AboutMe setSelectedPage={setSelectedPage}/>
+      <Hero setSelectedPage={setSelectedPage} />
+      <AboutMe setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
     </>
   );

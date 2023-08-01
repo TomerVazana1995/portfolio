@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { SelectedPage } from "../../shared/types";
 import { ProjectType } from "../../shared/types";
-import project1 from "../../images/project1.jpeg";
-import project2 from "../../images/project2.jpeg";
-import project3 from "../../images/project3.jpeg";
+import project1 from "../../assets/project1.jpeg";
+import project2 from "../../assets/project2.jpeg";
+import project3 from "../../assets/project3.jpeg";
 import Project from "./Project";
 
 const projects: Array<ProjectType> = [
