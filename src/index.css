@@ -223,6 +223,12 @@ body {
   padding-block: 5rem;
 }
 
+.aboutMe-content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 
 .aboutMe-content h1{
   padding-bottom: 2rem;
@@ -246,7 +252,7 @@ body {
 #projects {
   margin-inline: auto;
   min-height: 100%;
-  width: 50%;
+  width: 60%;
   padding-block: 5rem;
 }
 
