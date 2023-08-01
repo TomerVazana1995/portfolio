@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;500;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Sans-Serif";
+}
+
+:root {
+  --background: #000;
+  --text: #000;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--text);
+}
+
+#root {
+  min-height: 100dvh;
+  background-image: url("./images/background3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* -------- NAVBAR ---------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  padding-block: 1rem;
+}
+
+.navbar.active-navbar {
+  background: white;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: 83.333%;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+.navbar-medium {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-md-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+}
+
+.mobile-menu {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  width: 300px;
+  background: white;
+}
+
+.icon-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+}
+
+.side-menu {
+  margin-left: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.anchor-link {
+  color: #000;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.anchor-link:hover {
+  color: #453bcd;
+}
+
+/* -------- HERO --------- */
+
+#home {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+#home .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+#home .content .left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  min-height: 10rem;
+}
+
+.left-col p{
+  padding-block: 1rem;
+  line-height: 1.5rem;
+}
+
+#home .content .left-col h1 span {
+  color: #453bcd;
+}
+
+.right-col {
+  border-radius: 50% 25%;
+  border: 0.5rem solid black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#home .content .right-col img {
+  height: 20rem;
+  animation: image 3s ease-in-out infinite;
+  z-index: -1;
+  transform: translateY(1rem);
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+}
+
+#home h2 {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+}
+
+#text-animation {
+  -webkit-text-stroke: 0.1rem black;
+  color: transparent;
+}
+
+#home #text-animation::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: black;
+  -webkit-text-stroke: 0rem transparent;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes image {
+  0% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+/* -----------ABOUT ME ---------------- */
+
+#aboutme{
+  margin-inline: auto;
+  min-height: 100dvh;
+  width: 60%;
+  padding-block: 5rem;
+}
+
+
+.aboutMe-content h1{
+  padding-bottom: 2rem;
+}
+
+.aboutMe-content h3 {
+  padding-top: 5rem;
+}
+
+.aboutMe-content p {
+  line-height: 1.5rem;
+}
+
+.stack-icons img{
+  padding: 0.3rem;
+}
+
+/* ----------- PROJECTS ------------- */
+
+#projects {
+  margin-inline: auto;
+  min-height: 100%;
+  width: 50%;
+  padding-block: 5rem;
+}
+
+.projects-header {
+  margin-block: 1.25rem;
+  margin-inline: 2rem;
+}
+
+.projects-header p {
+  margin-block: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.projects-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.25rem;
+}
+
+.project {
+  margin-top: 1.25rem;
+  border-radius: 0.375rem;
+  border: 3px solid rgba(164,161,155,0.36);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 0.375rem  0.375rem 0 0;
+}
+
+
+.project-body h4 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.project-body p {
+  padding-bottom: 1rem;
+  padding-inline: 1rem;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-body a {
+  text-decoration: none;
+  border: 2px solid #453bcd;
+  padding: 0.3rem 0.875rem;
+  border-radius: 0.2rem;
+  color: #453bcd;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 1;
+  transition: all;
+}

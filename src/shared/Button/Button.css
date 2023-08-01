@@ -1,0 +1,29 @@
+.btn {
+  background: transparent;
+  border: transparent;
+  margin: 1rem;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.btn-outline {
+  border: 0.1rem solid black;
+  color: black;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.btn-outline:hover {
+  background: #453bcd;
+  opacity: 0.8;
+  letter-spacing: 0.15rem;
+  font-weight: 500;
+}
+
+.btn-medium {
+  width: 10rem;
+  padding-block: 0.6rem;
+}
