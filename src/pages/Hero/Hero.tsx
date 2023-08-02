@@ -1,16 +1,19 @@
 import Me from "../../assets/me.png";
-import Button from "../../shared/Button/Button";
 import { motion } from "framer-motion";
 import { SelectedPage } from "../../shared/types";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
-}
+};
 
-const Hero = ({setSelectedPage}: Props) => {
+const Hero = ({ setSelectedPage }: Props) => {
   return (
     <section id="home">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="content">
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+        className="content"
+      >
         <motion.div
           className="left-col"
           initial="hidden"
@@ -31,11 +34,15 @@ const Hero = ({setSelectedPage}: Props) => {
           </h2>
           <p>
             A passionate Full-Stack Developer, love to create and to learn new
-            thinks, Based in Israel, Tel Aviv 📌
+            things, Based in Israel, Tel Aviv 📌
           </p>
-          <Button buttonStyle="btn-outline" type="button">
+          <AnchorLink
+            className="btn btn-outline"
+            onClick={() => setSelectedPage(SelectedPage.ContactMe)}
+            href="#contactme"
+          >
             Contact Me
-          </Button>
+          </AnchorLink>
         </motion.div>
         <div className="right-col">
           <img src={Me} alt="#" />

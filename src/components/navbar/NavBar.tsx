@@ -42,6 +42,11 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
+                  <Link
+                    page="Contact Me"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
                 </div>
               </div>
             ) : (
@@ -73,7 +78,7 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
           {/* MENU ITEMS */}
           <div className="side-menu">
             <Link
-              page="Hero"
+              page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -84,6 +89,11 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
             />
             <Link
               page="Projects"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Contact Me"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

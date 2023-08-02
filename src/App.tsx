@@ -5,6 +5,7 @@ import NavBar from "./components/navbar/NavBar";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "./shared/types";
 import AboutMe from "./pages/AbooutMe/AboutMe";
+import ContactMe from "./pages/ContactMe/ContactMe";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -37,6 +38,7 @@ function App() {
       <Hero setSelectedPage={setSelectedPage} />
       <AboutMe setSelectedPage={setSelectedPage} />
       <Projects setSelectedPage={setSelectedPage} />
+      <ContactMe setSelectedPage={setSelectedPage}/>
     </>
   );
 }

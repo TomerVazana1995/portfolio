@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;500;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;500;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap");
 
 * {
   padding: 0;
@@ -22,6 +22,34 @@ body {
   background-image: url("./assets/background3.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.btn {
+  background: transparent;
+  border: transparent;
+  margin: 1rem;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 0.1rem solid black;
+  color: black;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.btn-outline:hover {
+  background: #453bcd;
+  opacity: 0.8;
+  letter-spacing: 0.15rem;
+  font-weight: 500;
 }
 
 /* -------- NAVBAR ---------- */
@@ -136,7 +164,7 @@ body {
   min-height: 10rem;
 }
 
-.left-col p{
+.left-col p {
   padding-block: 1rem;
   line-height: 1.5rem;
 }
@@ -216,21 +244,20 @@ body {
 
 /* -----------ABOUT ME ---------------- */
 
-#aboutme{
+#aboutme {
   margin-inline: auto;
   min-height: 100dvh;
   width: 60%;
   padding-block: 5rem;
 }
 
-.aboutMe-content{
+.aboutMe-content {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-
-.aboutMe-content h1{
+.aboutMe-content h1 {
   padding-bottom: 2rem;
 }
 
@@ -243,7 +270,7 @@ body {
   line-height: 1.5rem;
 }
 
-.stack-icons img{
+.stack-icons img {
   padding: 0.4rem;
 }
 
@@ -279,7 +306,7 @@ body {
 .project {
   margin-top: 1.25rem;
   border-radius: 0.375rem;
-  border: 3px solid rgba(164,161,155,0.36);
+  border: 3px solid rgba(164, 161, 155, 0.36);
   text-align: center;
   padding-bottom: 2rem;
   background: #f2f2f2;
@@ -293,9 +320,8 @@ body {
 
 .project-image img {
   width: 100%;
-  border-radius: 0.375rem  0.375rem 0 0;
+  border-radius: 0.375rem 0.375rem 0 0;
 }
-
 
 .project-body h4 {
   font-size: 1.25rem;
@@ -327,3 +353,81 @@ body {
   opacity: 1;
   transition: all;
 }
+
+/* ---------- CONTACT ME --------- */
+#contactme {
+  margin-inline: auto;
+  min-height: 100dvh;
+  width: 60%;
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactme h1{
+  padding-bottom: 2rem;
+}
+
+.contactMe-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contactMe-form input{
+  width: 100%;
+  outline: none;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.contactMe-form input[type=text]:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.contactMe-form textarea{
+  width: 100%;
+  outline: none;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.contactMe-form textarea[itemType=text]:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.contactMe-form button{
+  font-weight: 700;
+  background: #453bcd;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0 0 0 0.1);
+  border: none;
+  outline: none;
+  -webkit-transform-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.contactMe-form button:hover,
+.contactMe-form button:focus,
+.contactMe-form button:active{
+  box-shadow: 0 0 20px rgba(0 0 0 0.5);
+  transform: scale(1.1);
+}
+
+
+
